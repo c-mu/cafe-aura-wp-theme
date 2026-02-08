@@ -1,0 +1,90 @@
+/*--------------
+  ファーストビュー
+--------------*/
+.hero img{
+    width: 100%;
+}
+/*--------------
+  ABOUT
+--------------*/
+.about{
+    text-align: center;
+    padding: var(--base-padding);
+}
+.about p{
+    line-height: 3.6rem;
+}
+/*--------------
+  MENU
+--------------*/
+.menu{
+    text-align: center;
+    padding: var(--base-padding);
+    background-color: #d9d7c2;
+}
+.menu table{
+    margin: 0 auto;
+    text-align: left;
+}
+.menu td{
+    padding: 10px 20px;
+}
+/*--------------
+  ACCESS
+--------------*/
+.access{
+    text-align: center;
+    padding: var(--base-padding);
+}
+.access-info{
+    margin-bottom: var(--base-margin);
+    line-height: 1.8;
+}
+.map-container{
+    position: relative;
+    padding-top: 56.25%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.map-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+/*--------------
+  INFORMATION
+--------------*/
+aside{
+    text-align: center;
+    padding: var(--base-padding);
+    background-color: var(--primary-color);
+    color: var(--color-surface);
+}
+aside p{
+    margin-bottom: var(--base-margin);
+}
+aside figure img{
+    width: 150px;
+    margin-bottom: var(--base-margin);
+}
+aside .btn a{
+    display: inline-block;
+    background-color: var(--color-surface);
+    padding: 20px 80px;
+    border: 5px solid var(--secondary-color);
+    border-radius: 100px;
+    transition: opacity 0.3s;
+}
+aside .btn a:hover{
+    opacity: 0.8;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+}
