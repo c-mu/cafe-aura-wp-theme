@@ -3,21 +3,21 @@
 /*--------------
   リセットCSS
 --------------*/
-*{
+* {
     padding: 0;
     margin: 0;
 }
-a{
+a {
     color: var(--primary-color);
     text-decoration: none;
 }
-ul{
+ul {
     list-style-type: none;
 }
 /*--------------
   共通部分
 --------------*/
-:root{
+:root {
     --color-surface:#ffffff;
     --primary-color: #333;
     --secondary-color: #b9ad68;
@@ -25,41 +25,41 @@ ul{
     --base-padding: 30px;
     --base-margin: 30px;
 }
-body{
+body {
     color: var(--primary-color);
     background-color: var(--color-surface);
 }
-.container{
+.container {
     max-width: 1000px;
     margin: 0 auto;
     height: 100%;
 }
-h2{
+h2 {
     font-size: clamp(22px,3.2vw,36px);
     margin-bottom: var(--base-margin);
 }
 /*--------------
   ヘッダー
 --------------*/
-header{
+header {
     text-align: center;
     padding: var(--base-padding);
     background-color: var(--secondary-color);
 }
-header h1{
+header h1 {
     font-size: clamp(28px,6vw,70px);
     margin-bottom: var(--base-margin);
 }
-header nav ul{
+header nav ul {
     display: flex;
     justify-content: space-around;
 }
-header nav ul a{
+header nav ul a {
     font-weight: 600;
     border-radius: 6px;
     transition: background-color 0.3s;
     padding: 20px;
 }
-header nav ul a:hover{
+header nav ul a:hover {
     background-color: #d9d7c2;
 }

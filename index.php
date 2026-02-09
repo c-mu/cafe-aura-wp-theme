@@ -83,6 +83,38 @@
             </div>
         </div>
     </section>
+
+    <!-- NEWS -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>NEWS</h2>
+            <ul>
+            <?php
+                $args = array(
+                'post_type'      => 'post',
+                'posts_per_page' => 3,
+                );
+
+                $the_query = new WP_Query($args);
+                
+                if ($the_query->have_posts()) :
+                while ($the_query->have_posts()) : $the_query->the_post();
+            ?>            
+                <li>
+                <span class="date"><?php echo get_the_date('Y.m.d'); ?></span>
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                </li>
+                <?php
+                endwhile;
+                wp_reset_postdata();
+                else :
+            ?>
+                <li>お知らせはありません。</li>
+            <?php endif; ?>
+            </ul>
+        </div>
+    </section>
+
 </main>
 <aside id="reserve">
     <div class="container">
